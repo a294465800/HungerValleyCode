@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.logo {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: transparent url("./HungerValleyLogo.png") 0 0 no-repeat;
+}
+
+.logo:hover {
+  background-position: 0 -210px;
+}
