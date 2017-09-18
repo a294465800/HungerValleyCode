@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 960px;
+  min-height: 600px;
+  background-color: #eee;
+}
+
+main::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+aside {
+  width: 200px;
+  background-color: #999;
+  min-height: 400px;
+  float: left;
+}
+
+section {
+  margin-left: 220px;
+  margin-right: 0;
+  background-color: #ccc;
+  min-height: 600px;
+}
