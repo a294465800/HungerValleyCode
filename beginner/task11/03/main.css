@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  background-color: #eee;
+  max-width: 1140px;
+  min-height: 800px;
+  margin: 0 auto;
+}
+
+main::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#left {
+  float: left;
+  width: 200px;
+  min-height: 400px;
+  background-color: #ccc;
+}
+
+#right {
+  float: right;
+  width: 250px;
+  min-height: 600px;
+  background-color: #999;
+}
+
+section {
+  margin-left: 220px;
+  margin-right: 270px;
+  background-color: #333;
+  min-height: 800px;
+}
