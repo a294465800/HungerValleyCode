@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body,html {
+  margin: 0;
+}
+
+#header {
+  width: 100%;
+  background-color: #eee;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0;
+}
+
+li {
+  border-right: 1px solid #ccc;
+  display: inline-block;
+}
+
+li:last-of-type {
+  border-right: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 0;
+  min-width: 90px;
+  font-size: 16px;
+}
+
+a:hover {
+  background-color: skyblue;
+}
