@@ -26,4 +26,4 @@
  
 ### 教程
 #### 1. 新建仓库
-(新建仓库)[https://a294465800.github.io/HungerValleyCode/01.png]
+![新建仓库](https://github.com/a294465800/HungerValleyCode/blob/master/01.png)
