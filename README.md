@@ -30,17 +30,17 @@
 ![仓库名称](https://a294465800.github.io/HungerValleyCode/images/02.png)
 #### 2. 设置 github pages
 ![设置](https://a294465800.github.io/HungerValleyCode/images/03.png)
-！[找到 github pages](https://a294465800.github.io/HungerValleyCode/images/04.png)
-！[save](https://a294465800.github.io/HungerValleyCode/images/05.png)
+![找到 github pages](https://a294465800.github.io/HungerValleyCode/images/04.png)
+![save](https://a294465800.github.io/HungerValleyCode/images/05.png)
 
 > 然后那个链接就是能访问的了，默认打开根目录的`index.html`，所以现在新建这个文件。
 #### 3. 新建 `index.html`
 > 建议直接`git clone`，如图
 
-！[克隆项目](https://a294465800.github.io/HungerValleyCode/images/06.png)
-！[克隆成功](https://a294465800.github.io/HungerValleyCode/images/07.png)
+![克隆项目](https://a294465800.github.io/HungerValleyCode/images/06.png)
+![克隆成功](https://a294465800.github.io/HungerValleyCode/images/07.png)
 #### 4. 打开项目， VSCode 之类的，开干
-！[新建 index.html](https://a294465800.github.io/HungerValleyCode/images/08.png)
+![新建 index.html](https://a294465800.github.io/HungerValleyCode/images/08.png)
 ![三步提交](https://a294465800.github.io/HungerValleyCode/images/09.png)
 #### 5. 保存地址，方便下次打开
 ![保存地址](https://a294465800.github.io/HungerValleyCode/images/10.png)
