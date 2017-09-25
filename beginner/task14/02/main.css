@@ -1,0 +1,270 @@
+/* 
+  样式重置
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+/* 
+  简历通用样式
+*/
+
+.wrapper {
+  border: 1px solid #ccc;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  width: 960px;
+  box-shadow: 4px 5px 1px rgba(0, 0, 0, .2), 2px 6px 3px rgba(0, 0, 0, .3);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.section h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #666;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.plus-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  font-style: normal;
+}
+
+.plus-icon::after {
+  content: '+';
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 15px;
+}
+
+
+/* 
+  快速介绍
+*/
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.intro-name {
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.intro hgroup {
+  color: #000;
+}
+
+.intro h1 {
+  margin: 10px 0;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.intro h3 {
+  font-weight: 600;
+}
+
+.intro-contact {
+  width: 350px;
+}
+
+.intro-contact h2 {
+  border-bottom: 5px solid #000;
+  margin-bottom: 10px;
+}
+
+.intro-contact-list {
+  color: #000;
+}
+
+.intro-contact-list>li {
+  display: flex;
+  align-items: center;
+}
+
+.intro-contact-list strong {
+  display: inline-block;
+  font-size: 20px;
+  width: 30px;
+}
+
+.intro-contact-list a {
+  color: #000;
+}
+
+.intro-contact-list a:hover {
+  color: #ea6f5a;
+}
+
+
+/*  
+  工作经验
+*/
+
+.work article,
+.education article {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.work-part {
+  border-left: 1px solid #000;
+}
+
+.work-address,
+.work-description {
+  padding-left: 70px;
+}
+
+.work-address {
+  color: #333;
+  position: relative;
+  top: -10px;
+}
+
+.work-point {
+  position: absolute;
+  top: 6px;
+  left: -5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.work-separator {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+.work-time {
+  color: #c7c7c7;
+}
+
+.work-description {
+  margin-bottom: 30px;
+}
+
+
+/* 
+  教育
+*/
+
+.education-subtitle {
+  color: #c7c7c7;
+  padding-left: 70px;
+  position: relative;
+  top: -10px;
+}
+
+
+/*  
+  经历和能力
+*/
+
+.skill {
+  display: flex;
+}
+
+.skill-part {
+  flex: 1;
+  color: #333;
+  width: 100%;
+}
+
+.skill-part:first-of-type {
+  margin-right: 50px;
+}
+
+.skill-part:last-of-type {
+  margin-left: 50px;
+}
+
+.skill-title,
+.skill-content {
+  padding-left: 70px;
+}
+
+.skill-title {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.skill-title-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.skill-content {
+  margin-bottom: 30px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.skills li {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.skills i {
+  margin-right: 20px;
+}
