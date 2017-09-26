@@ -1,0 +1,175 @@
+/*  
+  重置样式
+*/
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid; */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+*::selection {
+  background-color: #800080!important;
+  color: #fff!important;
+}
+
+
+/*  
+  header部分
+*/
+
+#header {
+  background-image: url("http://img.bizhi.sogou.com/images/2015/01/19/1052347.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.nav-title {
+  font-size: 30px;
+  color: #800080;
+}
+
+.nav-title:hover {
+  color: #710271;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.responsive-nav {
+  display: none;
+}
+
+.nav-list>li>a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav-list>li>a:hover {
+  color: #800080;
+}
+
+#header .container {
+  padding-top: 160px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: #fff;
+}
+
+#header h3 {
+  font-size: 40px;
+  font-style: italic;
+  letter-spacing: 20px;
+}
+
+#header h1 {
+  font-size: 150px;
+  margin-bottom: 40px;
+}
+
+.header-link {
+  display: inline-block;
+  padding: 22px 40px;
+  font-size: 22px;
+  font-weight: 600;
+  background-color: #800080;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.header-link:hover {
+  background-color: #710271;
+}
+
+
+/*  
+  header 响应式导航
+*/
+
+@media screen and (max-width: 760px) {
+  .nav-bar {
+    padding: 15px;
+    position: relative;
+  }
+  .nav-title {
+    font-size: 24px;
+    color: #800080;
+  }
+  .nav-list {
+    display: none;
+  }
+  .responsive-nav {
+    display: block;
+  }
+  .responsive-nav i {
+    font-size: 24px;
+    color: #800080;
+  }
+  .responsive-nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+    width: 100%;
+  }
+  .responsive-nav input[type="checkbox"]:checked+ul {
+    display: block
+  }
+  .responsive-nav-list>li>a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .responsive-nav-list>li>a:hover {
+    color: #800080;
+  }
+}
