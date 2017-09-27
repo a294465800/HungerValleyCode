@@ -22,7 +22,14 @@
 编程二 [在线预览](https://a294465800.github.io/HungerValleyCode/beginner/task11/02/)         
 编程三 [在线预览](https://a294465800.github.io/HungerValleyCode/beginner/task11/03/)             
 编程四 [在线预览](https://a294465800.github.io/HungerValleyCode/beginner/task11/04/)         
-编程四 [在线预览](https://a294465800.github.io/HungerValleyCode/beginner/task11/05/)         
+编程四 [在线预览](https://a294465800.github.io/HungerValleyCode/beginner/task11/05/)    
+### 任务 13
+编程一 [在线预览](https://a294465800.github.io/HungerValleyCode/beginner/task13/01/)       
+### 任务 14
+编程一 [在线预览](https://a294465800.github.io/HungerValleyCode/beginner/task14/01/)         
+编程二 [在线预览](https://a294465800.github.io/HungerValleyCode/beginner/task14/02/)  
+### 任务 15
+编程一 [在线预览](https://a294465800.github.io/HungerValleyCode/beginner/task15/01/)    
  
 ### 教程
 #### 1. 新建仓库
