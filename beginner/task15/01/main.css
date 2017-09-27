@@ -450,6 +450,7 @@ p {
   width: 50%;
   border-right: 2px solid #eee;
   position: relative;
+  padding-bottom: 1px;
 }
 
 .about-article {
