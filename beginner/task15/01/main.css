@@ -78,6 +78,12 @@ p {
   margin: 30px 0 80px;
 }
 
+@media screen and (max-width: 1280px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
+
 
 /*  
   header部分
@@ -100,6 +106,7 @@ p {
   justify-content: space-between;
   padding: 20px 30px;
   background-color: rgba(0, 0, 0, .4);
+  z-index: 1;
 }
 
 .nav-title {
@@ -219,6 +226,7 @@ p {
   width: 100%;
   height: 100%;
   text-align: center;
+  background-color: #fff;
 }
 
 .intro-list {
@@ -261,11 +269,8 @@ p {
     width: 80%;
     margin: 0 auto;
   }
-  #intro .section-title {
-    font-size: 30px;
-  }
   #intro .section-subtitle {
-    margin: 10px 0 20px;
+    margin: 30px 0 40px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -290,7 +295,117 @@ p {
 #album {
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: #f7f7f7;
+  text-align: center;
+  min-height: 100%;
+  height: auto;
+}
+
+#album .section-title {
+  margin-top: 80px;
+}
+
+.album-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.album-list>li {
+  width: 340px;
+  background-color: #fff;
+  margin: 0 10px 10px;
+}
+
+.album-link {
+  display: block;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  line-height: 320px;
+}
+
+.album-link::before {
+  content: '+';
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(128, 0, 128, .7);
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.album-link:hover::before {
+  content: '+';
+  font-size: 46px;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(128, 0, 128, .7);
+  opacity: 1;
+}
+
+.album-post {
+  width: 100%;
+}
+
+.album-name {
+  color: #333;
+  margin-top: 15px;
+}
+
+.album-time {
+  font-style: italic;
+  color: #777;
+  margin: 5px 0 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .album-list {
+    width: 960px;
+  }
+  .album-list>li {
+    width: 300px;
+    background-color: #fff;
+    margin: 0 10px 10px;
+  }
+  .album-link {
+    display: block;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    line-height: 280px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .album-list {
+    width: 760px;
+  }
+  .album-list>li {
+    width: 340px;
+    background-color: #fff;
+    margin: 0 10px 10px;
+  }
+  .album-link {
+    display: block;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    line-height: 320px;
+  }
 }
 
 
