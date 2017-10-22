@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="../../../images/diamond.ico" type="image/x-icon">
-  <title>进阶 -- 任务十 -- 01</title>
+  <title>进阶 -- 任务十 -- 02</title>
   <script>
     var _hmt = _hmt || [];
     (function () {
@@ -20,13 +20,20 @@
 </head>
 
 <body>
-  <div class="board">
-    <ul id="boardList">
-      <li class="active">tab1</li>
-      <li>tab2</li>
-      <li>tab3</li>
-    </ul>
-    <div class="content">内容1</div>
+  <button id="clickMe">点我</button>
+  <div class="alert-shadow" id="alert">
+    <div class="alert-wrap">
+      <h3>我是标题</h3>
+      <div class="alert-content">
+        <p>我是内容一</p>
+        <p>我是内容二</p>
+      </div>
+      <div class="alert-operation">
+        <button id="alertCancel">取消</button>
+        <button id="alertConfirm">确定</button>
+      </div>
+      <span class="alert-close">X</span>
+    </div>
   </div>
   <script src="main.js"></script>
 </body>
