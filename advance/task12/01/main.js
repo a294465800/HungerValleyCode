@@ -7,8 +7,9 @@ window.onload = function () {
     xhr.addEventListener('load', function (res) {
       if (xhr.status >= 200 && xhr.status < 300 || xhr.status === 304) {
         var data = JSON.parse(xhr.response)
+        console.log(data)
         var ul = document.querySelector('#contentList')
-        data.forEach(element => {
+        data.data.forEach(element => {
           var li = document.createElement('li')
           li.innerHTML = element.name
           ul.appendChild(li)
