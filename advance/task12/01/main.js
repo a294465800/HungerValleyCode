@@ -5,9 +5,8 @@ window.onload = function () {
     xhr.open('GET', '/HungerValleyCode/advance/task12/01/category.json', true)
     xhr.send()
     xhr.addEventListener('load', function (res) {
-      console.log(xhr, res, res.currentTarget.response,res.currentTarget.responseText)
       if (xhr.status >= 200 && xhr.status < 300 || xhr.status === 304) {
-        var data = res.data.data
+        var data = JSON.parse(xhr.response)
         var ul = document.querySelector('#contentList')
         data.forEach(element => {
           var li = document.createElement('li')
