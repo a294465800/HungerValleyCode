@@ -50,6 +50,7 @@ body {
 #more:hover {
   background-color: red;
   color: #fff;
+  transition: all 0.5s;
 }
 
 #more:active,#more:focus {
