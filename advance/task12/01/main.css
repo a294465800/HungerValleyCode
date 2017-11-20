@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.content-list {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content-item {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.content-item:hover {
+  background-color: green;
+  color: #fff;
+  transition: all 0.5s;
+}
