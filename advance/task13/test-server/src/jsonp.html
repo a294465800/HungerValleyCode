@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JSONP 演示</title>
+</head>
+
+<body>
+  <button id="getData">点击获取数据</button>
+  <div>
+    <h1>数据展示</h1>
+    <p id="dataShow"></p>
+  </div>
+  <script>
+    const getData = document.getElementById('getData')
+    getData.addEventListener('click', (e) => {
+      const jsonpTag = document.getElementById('jsonp')
+      if(jsonpTag){
+        jsonpTag.remove()
+      }
+      let scriptTag = document.createElement('script')
+      scriptTag.src = 'http://127.0.0.1:3000/jsonp?callback=jsonp'
+      scriptTag.id = 'jsonp'
+      document.querySelector('body').appendChild(scriptTag)
+    })
+
+    function jsonp(data) {
+      const dataShow = document.getElementById('dataShow')
+      const str = JSON.stringify(data)
+      dataShow.innerHTML = str
+    }
+  </script>
+</body>
+
+</html>
