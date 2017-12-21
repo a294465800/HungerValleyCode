@@ -5,10 +5,9 @@
      * 新建一个轮播对象，所有方法基于 jQuery
      * @param {Object} options 
      *    {
-     *      swiperNodes: 轮播的父节点 jQ 对象（即将位移的对象）  ( 必填 )
+     *      swiperNodes: 轮播的所有图片节点 jQ 对象（即将位移的对象）  ( 必填 )
      *      btnNodes: 轮播的按钮对象数组 jQ 对象   （ 必填 ）
      *      speed: 轮播速度，单位 ms 。默认 500
-     *      distance: 每张图片的宽度，也就是每次位移的最小距离，单位 px 。默认 960 px
      *      currentIndex: 当前轮播图位置
      *      activeClass: 激活的样式，默认 active
      *      auto: 是否开启自动轮播， Boolean 类型， 默认 false
@@ -19,7 +18,6 @@
       this.swiperNodes = options.swiperNodes
       this.btnNodes = options.btnNodes
       this.speed = options.speed || 500
-      this.distance = options.distance || 960
       this.currentIndex = options.currentIndex || 0
       this.activeClass = options.activeClass || 'active'
       this.auto = options.auto || false
