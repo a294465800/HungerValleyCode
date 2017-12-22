@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.container {
+  min-height: 100%;
+  padding: 20px;
+}
+
+.list-wrap {
+  position: relative;
+}
+
+.list-item {
+  position: absolute;
+  width: 242px;
+  padding: 30px;
+  font-size: 30px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  transition: all 0.5s;
+}
