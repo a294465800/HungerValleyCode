@@ -444,6 +444,7 @@ Casks.prototype.handleData = function (data) {
   for (let i in data) {
     data[i].newHeight = this.basicHeight
     data[i].newWidth = data[i].webformatWidth * (this.basicHeight / data[i].webformatHeight)
+    data[i].newUrl = 'http://via.placeholder.com/' + data[i].webformatWidth + 'x' + data[i].webformatHeight
 
     if (this.totalWidth + data[i].newWidth > this.parentWidth) {
       this.render(this.rowList)
@@ -460,7 +461,7 @@ Casks.prototype.render = function () {
   let newBasicHeight = this.basicHeight * rate
   for (let i in this.rowList) {
     let div = document.createElement('div')
-    let img = `<img class="img-item" src="${this.rowList[i].webformatURL}" alt="${this.rowList[i].tags}">`
+    let img = `<img class="img-item" src="${this.rowList[i].newUrl}" alt="${this.rowList[i].tags}">`
     div.classList.add('img-wrap')
     div.innerHTML = img
     div.style.height = newBasicHeight + 'px'
