@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>高级 -- 任务三 -- 01</title>
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7f8e9cf98d8a1878fb67268972b8ba3e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <h1 align=center>Tab 组件封装</h1>
+  <h3 style="width: 600px; margin: 0 auto 20px;">使用方法：</h3>
+  <pre style="width: 600px; margin: 0 auto;">
+      <code lang="javascript">
+          var newTab = new Tab({
+            parentNode: '#tab1',
+            children: '#tab1 .tab-item',
+            activeClass: 'active'
+          })
+    
+          newTab.handleClickCallback = function (data, event) {
+            console.log(data, event)
+          }
+      </code>
+  </pre>
+  <div class="tab-wrap">
+    <ul class="tab" id="tab1">
+      <li class="tab-item active">tab1</li>
+      <li class="tab-item">tab2</li>
+      <li class="tab-item">tab3</li>
+    </ul>
+  </div>
+
+  <div class="tab-wrap">
+    <ul class="tab" id="tab2">
+      <li class="tab-item active2">tab1</li>
+      <li class="tab-item">tab2</li>
+      <li class="tab-item">tab3</li>
+    </ul>
+  </div>
+  <script src="main.js"></script>
+  <script>
+    var newTab1 = new Tab({
+      parentNode: '#tab1',
+      children: '#tab1 .tab-item',
+      activeClass: 'active'
+    })
+
+    var newTab2 = new Tab({
+      parentNode: '#tab2',
+      children: '#tab2 .tab-item',
+      activeClass: 'active2'
+    })
+
+    newTab1.handleClickCallback = function (data, event) {
+      console.log(data, event)
+    }
+
+    newTab2.handleClickCallback = function (data, event) {
+      console.log(data, event)
+    }
+  </script>
+</body>
+
+</html>
