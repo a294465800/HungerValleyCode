@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.img-wrap {
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.img-wrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.img-item {
+  width: 380px;
+  height: 380px;
+  float: left;
+  margin: 10px;
+}
+
+.img-item>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.img-item img {
+  width: 100%;
+  height: 100%;
+}
