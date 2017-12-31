@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>高级 -- 任务三 -- 01</title>
+  <!-- <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7f8e9cf98d8a1878fb67268972b8ba3e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script> -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <h1 align=center>轮播封装</h1>
+  <h3 style="width: 900px; margin: 0 auto 20px;">使用方法：</h3>
+  <pre style="width: 900px; margin: 0 auto;">
+      <code lang="javascript" style="word-break: break-all;white-space:pre-wrap;width:100%;">
+        var newSwiper = new Swiper({
+          parentNode: '#wrap',
+          auto: true,
+          imageData: [{
+              url: 'http://imgs12.iaweg.com/pic/HTTP2ltZzEuM2xpYW4uY29tL2ltZzAxMy92NC80Mi9kLzQxLmpwZwloglog.jpg',
+              link: '#'
+            },
+            {
+              url: 'http://imgs23.iaweg.com/pic/HTTP3BwdC5kb3duaG90LmNvbS9kL2ZpbGUvcC8yMDE0LzAzLzE0L2Y3YTNhZTUyY2U0YTZmOWE5Mzg4YWY4ZTQ5OGZjYWJlLmpwZwloglog.jpg',
+              link: '#'
+            },
+            {
+              url: 'http://imgs9.iaweg.com/pic/HTTP3R1cGlhbi5lbnRlcmRlc2suY29tLzIwMTMvbXh5LzEwLzE0LzEvNy5qcGclog.jpg',
+              link: '#'
+            },
+          ]
+        })
+      </code>
+  </pre>
+  <div id="wrap">
+  </div>
+  <script src="main.js"></script>
+  <script>
+    var newSwiper = new Swiper({
+      parentNode: '#wrap',
+      auto: true,
+      imageData: [{
+          url: 'http://imgs12.iaweg.com/pic/HTTP2ltZzEuM2xpYW4uY29tL2ltZzAxMy92NC80Mi9kLzQxLmpwZwloglog.jpg',
+          link: '#'
+        },
+        {
+          url: 'http://imgs23.iaweg.com/pic/HTTP3BwdC5kb3duaG90LmNvbS9kL2ZpbGUvcC8yMDE0LzAzLzE0L2Y3YTNhZTUyY2U0YTZmOWE5Mzg4YWY4ZTQ5OGZjYWJlLmpwZwloglog.jpg',
+          link: '#'
+        },
+        {
+          url: 'http://imgs9.iaweg.com/pic/HTTP3R1cGlhbi5lbnRlcmRlc2suY29tLzIwMTMvbXh5LzEwLzE0LzEvNy5qcGclog.jpg',
+          link: '#'
+        },
+      ]
+    })
+  </script>
+</body>
+
+</html>
