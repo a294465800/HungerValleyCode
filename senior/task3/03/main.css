@@ -30,7 +30,25 @@
   color: #fff;
 }
 
-#tab2 .tab-item:hover,.tab-item.active2 {
+#tab2 .tab-item:hover,
+.tab-item.active2 {
   background-color: blue;
   color: #fff;
+}
+
+.content {
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.content-item {
+  min-height: 400px;
+  display: none;
+}
+
+.content-item.active {
+  display: block;
 }

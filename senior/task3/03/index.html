@@ -40,6 +40,11 @@
       <li class="tab-item">tab2</li>
       <li class="tab-item">tab3</li>
     </ul>
+    <ul class="content" id="content1">
+      <li class="content-item active">content1</li>
+      <li class="content-item">content2</li>
+      <li class="content-item">content3</li>
+    </ul>
   </div>
 
   <div class="tab-wrap">
@@ -47,6 +52,11 @@
       <li class="tab-item active2">tab1</li>
       <li class="tab-item">tab2</li>
       <li class="tab-item">tab3</li>
+    </ul>
+    <ul class="content" id="content2">
+      <li class="content-item active">content11</li>
+      <li class="content-item">content22</li>
+      <li class="content-item">content33</li>
     </ul>
   </div>
   <script src="main.js"></script>
@@ -64,11 +74,21 @@
     })
 
     newTab1.handleClickCallback = function (data, event) {
-      console.log(data, event)
+      var index = data.index
+      var contentItems = document.querySelectorAll('#content1 .content-item')
+      for (var i = 0; i < contentItems.length; i++) {
+        contentItems[i].classList.remove('active')
+      }
+      contentItems[index].classList.add('active')
     }
 
     newTab2.handleClickCallback = function (data, event) {
-      console.log(data, event)
+      var index = data.index
+      var contentItems = document.querySelectorAll('#content2 .content-item')
+      for (var i = 0; i < contentItems.length; i++) {
+        contentItems[i].classList.remove('active')
+      }
+      contentItems[index].classList.add('active')
     }
   </script>
 </body>
