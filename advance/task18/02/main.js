@@ -53,7 +53,7 @@ function JSONP(options) {
     body.removeChild(scriptNode)
   }
   const newScriptNode = document.createElement('script')
-  newScriptNode.src = `http://platform.sina.com.cn/slide/album_tech?app_key=1271687855&num=${options.num || 10}&page=${options.page || 1}&jsoncallback=${options.fncName}`
+  newScriptNode.src = `https://platform.sina.com.cn/slide/album_tech?app_key=1271687855&num=${options.num || 10}&page=${options.page || 1}&jsoncallback=${options.fncName}`
   newScriptNode.id = 'jsonp'
   body.appendChild(newScriptNode)
 }
